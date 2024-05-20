@@ -91,9 +91,9 @@ namespace TrilhaApiDesafio.Controllers
             if (tarefaBanco == null)
                 return NotFound();
 
-            tarefaBanco.Titulo = tarefaBanco.Titulo;
-            tarefaBanco.Descricao = tarefaBanco.Descricao;
-            tarefaBanco.Status = tarefaBanco.Status;
+            tarefaBanco.Titulo = tarefa.Titulo;
+            tarefaBanco.Descricao = tarefa.Descricao;
+            tarefaBanco.Status = tarefa.Status;
 
             _context.Tarefas.Update(tarefaBanco);
             _context.SaveChanges();
